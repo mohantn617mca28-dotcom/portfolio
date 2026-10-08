@@ -1,0 +1,593 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Mohan K — Full-Stack Web Developer</title>
+<meta name="description" content="Mohan K — Full-Stack Web Developer building modern, responsive and user-friendly websites & web applications with React.js, Python, Firebase and Cloudinary." />
+<meta name="author" content="Mohan K" />
+<meta name="theme-color" content="#0a0e19" />
+
+<!-- Open Graph -->
+<meta property="og:title" content="Mohan K — Full-Stack Web Developer" />
+<meta property="og:description" content="I build modern, responsive and user-friendly websites and web applications." />
+<meta property="og:type" content="website" />
+<meta property="og:image" content="assets/profile.jpg" />
+
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='24' fill='%236366f1'/><text x='50' y='68' font-size='58' font-family='Arial' font-weight='bold' fill='white' text-anchor='middle'>M</text></svg>" />
+<link rel="preload" as="image" href="assets/profile.png" />
+<link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<!-- ============ PRELOADER ============ -->
+<div class="preloader" id="preloader" aria-hidden="true">
+  <div class="pl-logo">M<span>K</span></div>
+  <div class="pl-bar"><span></span></div>
+</div>
+
+<!-- ============ SCROLL PROGRESS ============ -->
+<div class="scroll-progress" id="scrollProgress" aria-hidden="true"></div>
+
+<!-- ============ CURSOR GLOW ============ -->
+<div class="cursor-glow" id="cursorGlow" aria-hidden="true"></div>
+
+<!-- ============ BACKGROUND FX ============ -->
+<div class="bg-fx" aria-hidden="true">
+  <div class="orb orb-1"></div>
+  <div class="orb orb-2"></div>
+  <div class="orb orb-3"></div>
+  <div class="grid-lines"></div>
+</div>
+
+<!-- ============ HEADER / NAV ============ -->
+<header class="header" id="header">
+  <nav class="nav container" aria-label="Main navigation">
+    <a href="#home" class="brand" aria-label="Mohan K — home">
+      <span class="brand-mark">M</span>
+      <span class="brand-text">Mohan<em>.dev</em></span>
+    </a>
+
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#home" class="nav-link active">Home</a></li>
+      <li><a href="#about" class="nav-link">About</a></li>
+      <li><a href="#skills" class="nav-link">Skills</a></li>
+      <li><a href="#projects" class="nav-link">Projects</a></li>
+      <li><a href="#education" class="nav-link">Education</a></li>
+      <li><a href="#certificates" class="nav-link">Certificates</a></li>
+      <li><a href="#contact" class="nav-link">Contact</a></li>
+    </ul>
+
+    <div class="nav-actions">
+      <button class="theme-toggle" id="themeToggle" type="button" aria-label="Toggle colour theme" title="Toggle theme">
+        <svg viewBox="0 0 24 24" class="ic-sun" aria-hidden="true"><circle cx="12" cy="12" r="4.2"/><g stroke-linecap="round"><path d="M12 2.5v2.6M12 18.9v2.6M2.5 12h2.6M18.9 12h2.6M5.2 5.2l1.9 1.9M16.9 16.9l1.9 1.9M18.8 5.2l-1.9 1.9M7.1 16.9l-1.9 1.9"/></g></svg>
+        <svg viewBox="0 0 24 24" class="ic-moon" aria-hidden="true"><path d="M20 14.2A8.4 8.4 0 0 1 9.8 4 8.5 8.5 0 1 0 20 14.2z"/></svg>
+      </button>
+      <a href="#contact" class="btn btn-sm btn-primary nav-cta">Hire Me</a>
+      <button class="hamburger" id="hamburger" type="button" aria-label="Open menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+</header>
+
+<main>
+
+<!-- ============ HERO ============ -->
+<section class="hero section" id="home">
+  <div class="container hero-grid">
+    <div class="hero-copy">
+      <span class="pill reveal" data-reveal>
+        <span class="pulse-dot"></span> Available for full-time roles &amp; freelance
+      </span>
+
+      <h1 class="hero-title reveal" data-reveal data-delay="1">
+        Hi, I'm <span class="grad">Mohan K</span>
+      </h1>
+
+      <h2 class="hero-role reveal" data-reveal data-delay="2">
+        <span id="typed" class="typed"></span><span class="caret" aria-hidden="true"></span>
+      </h2>
+
+      <p class="hero-desc reveal" data-reveal data-delay="3">
+        I build <strong>modern, responsive and user-friendly</strong> websites and web
+        applications — from pixel-perfect React interfaces to Python + Firebase backends
+        with payments, media and authentication wired in.
+      </p>
+
+      <div class="hero-cta reveal" data-reveal data-delay="4">
+        <a href="#projects" class="btn btn-primary">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 6h16M4 12h16M4 18h10" stroke-linecap="round"/></svg>
+          View My Work
+        </a>
+        <a href="assets/Mohan-K-Resume.html" target="_blank" rel="noopener" class="btn btn-ghost">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3v11m0 0 4-4m-4 4-4-4M5 20h14" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          Resume
+        </a>
+        <a href="#contact" class="btn btn-ghost">Contact Me</a>
+      </div>
+
+      <ul class="hero-socials reveal" data-reveal data-delay="5">
+        <li><a href="https://github.com/" target="_blank" rel="noopener" aria-label="GitHub">
+          <svg viewBox="0 0 24 24" class="fill"><path d="M12 2a10 10 0 0 0-3.16 19.49c.5.09.68-.22.68-.48v-1.7c-2.78.6-3.37-1.34-3.37-1.34-.45-1.16-1.11-1.47-1.11-1.47-.91-.62.07-.6.07-.6 1 .07 1.53 1.03 1.53 1.03.9 1.53 2.36 1.09 2.94.83.09-.65.35-1.09.63-1.34-2.22-.25-4.56-1.11-4.56-4.95 0-1.09.39-1.98 1.03-2.68-.1-.25-.45-1.27.1-2.65 0 0 .84-.27 2.75 1.02a9.5 9.5 0 0 1 5 0c1.91-1.29 2.75-1.02 2.75-1.02.55 1.38.2 2.4.1 2.65.64.7 1.03 1.59 1.03 2.68 0 3.85-2.34 4.7-4.57 4.94.36.31.68.92.68 1.86v2.75c0 .26.18.58.69.48A10 10 0 0 0 12 2z"/></svg>
+        </a></li>
+        <li><a href="https://linkedin.com/" target="_blank" rel="noopener" aria-label="LinkedIn">
+          <svg viewBox="0 0 24 24" class="fill"><path d="M4.98 3.5a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5zM3 9h4v12H3zM9 9h3.8v1.7h.05c.53-.95 1.83-1.95 3.76-1.95 4.02 0 4.76 2.5 4.76 5.76V21h-4v-5.6c0-1.34-.02-3.06-1.9-3.06-1.9 0-2.19 1.44-2.19 2.96V21H9z"/></svg>
+        </a></li>
+        <li><a href="https://twitter.com/" target="_blank" rel="noopener" aria-label="Twitter / X">
+          <svg viewBox="0 0 24 24" class="fill"><path d="M17.5 3h3.2l-7 8 7.3 10h-5.6l-4.4-6-5 6H3l7.3-8.7L3.3 3h5.7l4.1 5.6L17.5 3z"/></svg>
+        </a></li>
+        <li><a href="https://instagram.com/" target="_blank" rel="noopener" aria-label="Instagram">
+          <svg viewBox="0 0 24 24"><rect x="3.2" y="3.2" width="17.6" height="17.6" rx="5" fill="none" stroke-width="1.9"/><circle cx="12" cy="12" r="4" fill="none" stroke-width="1.9"/><circle cx="17" cy="7" r="1.3" class="fill"/></svg>
+        </a></li>
+        <li><a href="mailto:mohantn617@gmail.com" aria-label="Email">
+          <svg viewBox="0 0 24 24"><rect x="2.6" y="4.6" width="18.8" height="14.8" rx="3" fill="none" stroke-width="1.9"/><path d="m4 7 8 6 8-6" fill="none" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </a></li>
+      </ul>
+
+      <ul class="hero-facts reveal" data-reveal data-delay="6">
+        <li><span class="dot"></span> MCA Postgraduate @ Mepco Schlenk</li>
+        <li><span class="dot"></span> Tamil Nadu, India</li>
+      </ul>
+    </div>
+
+    <div class="hero-visual reveal" data-reveal data-delay="3">
+      <div class="photo-wrap">
+        <div class="photo-ring"></div>
+        <div class="photo-frame">
+          <img src="assets/profile.png" alt="Mohan K — Full-Stack Web Developer" width="380" height="570" />
+        </div>
+        <div class="badge-float badge-a">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2 3 7v10l9 5 9-5V7z" fill="none" stroke-width="1.8"/><path d="m3 7 9 5 9-5M12 12v10" fill="none" stroke-width="1.8"/></svg>
+          <div><strong>Full-Stack</strong><small>Web Developer</small></div>
+        </div>
+        <div class="badge-float badge-b">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m9 11 3 3L22 4" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11" fill="none" stroke-width="2" stroke-linecap="round"/></svg>
+          <div><strong>Clean Code</strong><small>Responsive UI</small></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- tech marquee -->
+  <div class="marquee" aria-label="Technologies I work with">
+    <div class="marquee-track" id="marqueeTrack"></div>
+  </div>
+</section>
+
+<!-- ============ STATS ============ -->
+<section class="stats-band">
+  <div class="container stats-grid">
+    <div class="stat reveal" data-reveal><b class="count" data-target="6" data-suffix="+">0</b><span>Projects Built</span></div>
+    <div class="stat reveal" data-reveal data-delay="1"><b class="count" data-target="12" data-suffix="+">0</b><span>Technologies</span></div>
+    <div class="stat reveal" data-reveal data-delay="2"><b class="count" data-target="4" data-suffix="">0</b><span>Certifications</span></div>
+    <div class="stat reveal" data-reveal data-delay="3"><b class="count" data-target="15" data-suffix="k+">0</b><span>Lines Written</span></div>
+  </div>
+</section>
+
+<!-- ============ ABOUT ============ -->
+<section class="section" id="about">
+  <div class="container">
+    <header class="sec-head reveal" data-reveal>
+      <span class="sec-tag">01 — About</span>
+      <h2 class="sec-title">Passionate developer building <span class="grad">seamless digital experiences</span></h2>
+      <p class="sec-sub">A quick look at who I am, what I do and how I work.</p>
+    </header>
+
+    <div class="about-grid">
+      <div class="about-text reveal" data-reveal>
+        <h3 class="mini-title">Who I Am</h3>
+        <p>
+          I am <strong>Mohan K</strong>, a highly motivated postgraduate student currently pursuing my
+          <strong>Master of Computer Applications (MCA)</strong> at
+          <strong>Mepco Schlenk Engineering College, Sivakasi</strong>. Having successfully completed my
+          <strong>B.Sc in Information Technology</strong>, I specialise in engineering robust, modern and
+          interactive web applications using <strong>React.js</strong>, <strong>Python</strong>,
+          <strong>Firebase</strong> and <strong>Cloudinary</strong>.
+        </p>
+        <p>
+          I am actively seeking full-time opportunities, tech roles or corporate collaborations where I can
+          apply my technical background to build seamless, scalable software and web applications.
+        </p>
+
+        <ul class="check-list">
+          <li>Frontend development with React.js &amp; modern JavaScript</li>
+          <li>Backend &amp; data with Python and Firebase (Firestore, Auth)</li>
+          <li>Cloudinary media management &amp; optimised delivery</li>
+          <li>Razorpay payment integration &amp; mobile number verification</li>
+          <li>Responsive, accessible, mobile-first UI engineering</li>
+        </ul>
+
+        <div class="about-actions">
+          <a href="#projects" class="btn btn-primary btn-sm">See Projects</a>
+          <a href="#contact" class="btn btn-ghost btn-sm">Let's Talk</a>
+        </div>
+      </div>
+
+      <aside class="about-card reveal" data-reveal data-delay="2">
+        <div class="info-row"><span>Name</span><b>Mohan K</b></div>
+        <div class="info-row"><span>Role</span><b>Full-Stack Web Developer</b></div>
+        <div class="info-row"><span>Degree</span><b>MCA (Pursuing)</b></div>
+        <div class="info-row"><span>College</span><b>Mepco Schlenk Engg. College</b></div>
+        <div class="info-row"><span>Location</span><b>Tamil Nadu, India</b></div>
+        <div class="info-row"><span>Languages</span><b>Tamil, English</b></div>
+        <div class="info-row"><span>Status</span><b class="ok">Open to opportunities</b></div>
+
+        <div class="stack-chips">
+          <span>React</span><span>Python</span><span>Firebase</span><span>Cloudinary</span>
+          <span>Razorpay</span><span>Tailwind</span><span>Bootstrap</span><span>Git</span>
+        </div>
+      </aside>
+    </div>
+  </div>
+</section>
+
+<!-- ============ SKILLS ============ -->
+<section class="section" id="skills">
+  <div class="container">
+    <header class="sec-head reveal" data-reveal>
+      <span class="sec-tag">02 — Skills</span>
+      <h2 class="sec-title">My <span class="grad">technical toolkit</span></h2>
+      <p class="sec-sub">Technologies and tools I use to design, build and ship products.</p>
+    </header>
+
+    <div class="skills-layout">
+      <div class="skill-bars reveal" data-reveal>
+        <div class="bar-item" data-level="90">
+          <div class="bar-head"><span>HTML5 &amp; Semantic Markup</span><em>90%</em></div>
+          <div class="bar"><i></i></div>
+        </div>
+        <div class="bar-item" data-level="86">
+          <div class="bar-head"><span>CSS3 / Tailwind / Bootstrap</span><em>86%</em></div>
+          <div class="bar"><i></i></div>
+        </div>
+        <div class="bar-item" data-level="84">
+          <div class="bar-head"><span>JavaScript (ES6+)</span><em>84%</em></div>
+          <div class="bar"><i></i></div>
+        </div>
+        <div class="bar-item" data-level="82">
+          <div class="bar-head"><span>React.js</span><em>82%</em></div>
+          <div class="bar"><i></i></div>
+        </div>
+        <div class="bar-item" data-level="78">
+          <div class="bar-head"><span>Python</span><em>78%</em></div>
+          <div class="bar"><i></i></div>
+        </div>
+        <div class="bar-item" data-level="80">
+          <div class="bar-head"><span>Firebase / Firestore / Auth</span><em>80%</em></div>
+          <div class="bar"><i></i></div>
+        </div>
+      </div>
+
+      <div class="skill-cards">
+        <article class="sk-card reveal" data-reveal data-delay="1">
+          <div class="sk-ico i-front">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 5h16v11H4z" fill="none" stroke-width="1.8"/><path d="M2 19h20" stroke-width="1.8" stroke-linecap="round"/></svg>
+          </div>
+          <h3>Frontend</h3>
+          <p>Responsive interfaces with React.js, hooks, component architecture and modern CSS/Tailwind.</p>
+          <div class="chips"><span>React</span><span>JavaScript</span><span>Tailwind</span><span>Bootstrap</span></div>
+        </article>
+
+        <article class="sk-card reveal" data-reveal data-delay="2">
+          <div class="sk-ico i-back">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><ellipse cx="12" cy="6" rx="7.5" ry="3" fill="none" stroke-width="1.8"/><path d="M4.5 6v12c0 1.7 3.4 3 7.5 3s7.5-1.3 7.5-3V6" fill="none" stroke-width="1.8"/><path d="M4.5 12c0 1.7 3.4 3 7.5 3s7.5-1.3 7.5-3" fill="none" stroke-width="1.8"/></svg>
+          </div>
+          <h3>Backend &amp; Data</h3>
+          <p>Python services, Firebase Firestore data modelling, authentication flows and REST integration.</p>
+          <div class="chips"><span>Python</span><span>Firebase</span><span>Firestore</span><span>Auth</span></div>
+        </article>
+
+        <article class="sk-card reveal" data-reveal data-delay="3">
+          <div class="sk-ico i-cloud">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 18h9.5a4 4 0 0 0 .3-8 6 6 0 0 0-11.5 1.4A3.3 3.3 0 0 0 7 18z" fill="none" stroke-width="1.8" stroke-linejoin="round"/></svg>
+          </div>
+          <h3>Media &amp; Payments</h3>
+          <p>Cloudinary upload/transform pipelines and Razorpay checkout with server-side verification.</p>
+          <div class="chips"><span>Cloudinary</span><span>Razorpay</span><span>OTP Verify</span></div>
+        </article>
+
+        <article class="sk-card reveal" data-reveal data-delay="4">
+          <div class="sk-ico i-tools">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m14.5 4.5 5 5-9 9H5.5v-5z" fill="none" stroke-width="1.8" stroke-linejoin="round"/><path d="m12.5 6.5 5 5" stroke-width="1.8"/></svg>
+          </div>
+          <h3>Tools &amp; Deploy</h3>
+          <p>Git &amp; GitHub workflows, Vercel deployments, VS Code, Chrome DevTools and debugging.</p>
+          <div class="chips"><span>Git</span><span>GitHub</span><span>Vercel</span><span>VS Code</span></div>
+        </article>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ PROJECTS ============ -->
+<section class="section" id="projects">
+  <div class="container">
+    <header class="sec-head reveal" data-reveal>
+      <span class="sec-tag">03 — Work</span>
+      <h2 class="sec-title">Featured <span class="grad">projects</span></h2>
+      <p class="sec-sub">Click any project card to open full details.</p>
+    </header>
+
+    <div class="filter-bar reveal" data-reveal>
+      <button class="filter-btn active" data-filter="all" type="button">All</button>
+      <button class="filter-btn" data-filter="web" type="button">Web Apps</button>
+      <button class="filter-btn" data-filter="game" type="button">Games</button>
+      <button class="filter-btn" data-filter="ui" type="button">UI / Portfolio</button>
+    </div>
+
+    <div class="projects-grid" id="projectsGrid"></div>
+  </div>
+</section>
+
+<!-- ============ EDUCATION ============ -->
+<section class="section" id="education">
+  <div class="container">
+    <header class="sec-head reveal" data-reveal>
+      <span class="sec-tag">04 — Education</span>
+      <h2 class="sec-title">Academic <span class="grad">timeline</span></h2>
+      <p class="sec-sub">The journey that shaped my engineering mindset.</p>
+    </header>
+
+    <ol class="timeline">
+      <li class="tl-item reveal" data-reveal>
+        <span class="tl-dot"></span>
+        <div class="tl-card">
+          <span class="tl-badge now">Currently Pursuing</span>
+          <h3>Master of Computer Applications (MCA)</h3>
+          <p class="tl-org">Mepco Schlenk Engineering College, Sivakasi</p>
+          <p>Postgraduate degree focusing on advanced software engineering, database management systems and full-stack web application development.</p>
+        </div>
+      </li>
+      <li class="tl-item reveal" data-reveal data-delay="1">
+        <span class="tl-dot"></span>
+        <div class="tl-card">
+          <span class="tl-badge">First Class / Distinction</span>
+          <h3>B.Sc Information Technology</h3>
+          <p class="tl-org">Sri Kaliswari College (Autonomous), Sivakasi</p>
+          <p>Graduated with distinction. Core coursework in web programming, software development, data structures and computer networking.</p>
+        </div>
+      </li>
+      <li class="tl-item reveal" data-reveal data-delay="2">
+        <span class="tl-dot"></span>
+        <div class="tl-card">
+          <span class="tl-badge">HSC</span>
+          <h3>Higher Secondary Certificate</h3>
+          <p class="tl-org">S.R.N Government Higher Secondary Boys School, Thiruthangal</p>
+          <p>Completed the state board curriculum with a strong foundation in computer science and mathematical analytics.</p>
+        </div>
+      </li>
+      <li class="tl-item reveal" data-reveal data-delay="3">
+        <span class="tl-dot"></span>
+        <div class="tl-card">
+          <span class="tl-badge">SSLC — 2021</span>
+          <h3>Secondary School Leaving Certificate</h3>
+          <p class="tl-org">Kalimaagal HR Secondary School</p>
+          <p>Built core foundational knowledge in science and mathematics that led me towards information technology.</p>
+        </div>
+      </li>
+    </ol>
+  </div>
+</section>
+
+<!-- ============ CERTIFICATES ============ -->
+<section class="section" id="certificates">
+  <div class="container">
+    <header class="sec-head reveal" data-reveal>
+      <span class="sec-tag">05 — Credentials</span>
+      <h2 class="sec-title">Verified <span class="grad">certificates</span> &amp; internship</h2>
+      <p class="sec-sub">Certifications, internship completions and achievements. Click to view full size.</p>
+    </header>
+
+    <div class="cert-grid">
+      <figure class="cert-card reveal" data-reveal>
+        <button class="cert-thumb" type="button" data-img="assets/certs/short-eilm.jpg" data-title="SHORT EILM-ONLINE" data-sub="AJ College — Internship">
+          <img src="assets/certs/short-eilm.jpg" alt="SHORT EILM-ONLINE internship certificate" loading="lazy" />
+          <span class="cert-zoom"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="6.5" fill="none" stroke-width="2"/><path d="m16 16 4.5 4.5M11 8.5v5M8.5 11h5" stroke-width="2" stroke-linecap="round"/></svg></span>
+        </button>
+        <figcaption>
+          <span class="cert-tag">Internship</span>
+          <h3>SHORT EILM-ONLINE</h3>
+          <p>AJ College</p>
+        </figcaption>
+      </figure>
+
+      <figure class="cert-card reveal" data-reveal data-delay="1">
+        <button class="cert-thumb" type="button" data-img="assets/certs/web-design.jpg" data-title="Web Design" data-sub="SAI SHREE ACCOUNTING ACADEMY">
+          <img src="assets/certs/web-design.jpg" alt="Web Design certificate" loading="lazy" />
+          <span class="cert-zoom"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="6.5" fill="none" stroke-width="2"/><path d="m16 16 4.5 4.5M11 8.5v5M8.5 11h5" stroke-width="2" stroke-linecap="round"/></svg></span>
+        </button>
+        <figcaption>
+          <span class="cert-tag">Academic</span>
+          <h3>Web Design</h3>
+          <p>SAI SHREE ACCOUNTING ACADEMY</p>
+        </figcaption>
+      </figure>
+
+      <figure class="cert-card reveal" data-reveal data-delay="2">
+        <button class="cert-thumb" type="button" data-img="assets/certs/web-dev-internship.jpg" data-title="Web Development Internship" data-sub="Exposys Data Labs">
+          <img src="assets/certs/web-dev-internship.jpg" alt="Web development internship certificate" loading="lazy" />
+          <span class="cert-zoom"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="6.5" fill="none" stroke-width="2"/><path d="m16 16 4.5 4.5M11 8.5v5M8.5 11h5" stroke-width="2" stroke-linecap="round"/></svg></span>
+        </button>
+        <figcaption>
+          <span class="cert-tag">Internship</span>
+          <h3>Web Development Internship</h3>
+          <p>Exposys Data Labs</p>
+        </figcaption>
+      </figure>
+
+      <figure class="cert-card reveal" data-reveal data-delay="3">
+        <button class="cert-thumb" type="button" data-img="assets/certs/tennikoit.jpg" data-title="Tennikoit" data-sub="Annual Sports — Achievement">
+          <img src="assets/certs/tennikoit.jpg" alt="Tennikoit sports achievement certificate" loading="lazy" />
+          <span class="cert-zoom"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="6.5" fill="none" stroke-width="2"/><path d="m16 16 4.5 4.5M11 8.5v5M8.5 11h5" stroke-width="2" stroke-linecap="round"/></svg></span>
+        </button>
+        <figcaption>
+          <span class="cert-tag">Sports &amp; Achievements</span>
+          <h3>Tennikoit</h3>
+          <p>Annual Sports</p>
+        </figcaption>
+      </figure>
+    </div>
+  </div>
+</section>
+
+<!-- ============ CONTACT ============ -->
+<section class="section" id="contact">
+  <div class="container">
+    <header class="sec-head reveal" data-reveal>
+      <span class="sec-tag">06 — Contact</span>
+      <h2 class="sec-title">Let's <span class="grad">connect</span></h2>
+      <p class="sec-sub">Have a project or a role in mind? Send a message and I'll get back to you.</p>
+    </header>
+
+    <div class="contact-grid">
+      <div class="contact-info reveal" data-reveal>
+        <a class="ct-item" href="tel:+919597043905">
+          <span class="ct-ico">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6.6 3.5h3l1.5 4-2 1.4a12 12 0 0 0 6 6l1.4-2 4 1.5v3a2 2 0 0 1-2.2 2A16.5 16.5 0 0 1 4.6 5.7 2 2 0 0 1 6.6 3.5z" fill="none" stroke-width="1.8" stroke-linejoin="round"/></svg>
+          </span>
+          <span><small>Phone</small><b>+91 95970 43905</b></span>
+        </a>
+
+        <a class="ct-item" href="mailto:mohantn617@gmail.com">
+          <span class="ct-ico">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="2.6" y="4.6" width="18.8" height="14.8" rx="3" fill="none" stroke-width="1.8"/><path d="m4 7 8 6 8-6" fill="none" stroke-width="1.8" stroke-linejoin="round"/></svg>
+          </span>
+          <span><small>Email</small><b>mohantn617@gmail.com</b></span>
+        </a>
+
+        <div class="ct-item static">
+          <span class="ct-ico">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s7-5.6 7-11a7 7 0 1 0-14 0c0 5.4 7 11 7 11z" fill="none" stroke-width="1.8" stroke-linejoin="round"/><circle cx="12" cy="10" r="2.6" fill="none" stroke-width="1.8"/></svg>
+          </span>
+          <span><small>Location</small><b>Tamil Nadu, India</b></span>
+        </div>
+
+        <div class="ct-note">
+          <strong>Follow me</strong>
+          <div class="ct-socials">
+            <a href="https://github.com/" target="_blank" rel="noopener">GitHub</a>
+            <a href="https://linkedin.com/" target="_blank" rel="noopener">LinkedIn</a>
+            <a href="https://twitter.com/" target="_blank" rel="noopener">Twitter</a>
+            <a href="https://instagram.com/" target="_blank" rel="noopener">Instagram</a>
+          </div>
+        </div>
+      </div>
+
+      <form class="contact-form reveal" data-reveal data-delay="2" id="contactForm" novalidate>
+        <div class="field">
+          <label for="name">Your Name *</label>
+          <input id="name" name="name" type="text" placeholder="e.g. Arun Kumar" required />
+          <small class="err"></small>
+        </div>
+
+        <div class="field-row">
+          <div class="field">
+            <label for="email">Email *</label>
+            <input id="email" name="email" type="email" placeholder="you@example.com" required />
+            <small class="err"></small>
+          </div>
+          <div class="field">
+            <label for="mobile">Mobile Number</label>
+            <input id="mobile" name="mobile" type="tel" inputmode="numeric" placeholder="10-digit number" />
+            <small class="err"></small>
+          </div>
+        </div>
+
+        <div class="field">
+          <label for="subject">Subject *</label>
+          <input id="subject" name="subject" type="text" placeholder="Project enquiry / Job opportunity" required />
+          <small class="err"></small>
+        </div>
+
+        <div class="field">
+          <label for="message">Message *</label>
+          <textarea id="message" name="message" rows="5" placeholder="Tell me about your project or role..." required></textarea>
+          <small class="err"></small>
+        </div>
+
+        <button type="submit" class="btn btn-primary btn-block" id="submitBtn">
+          <span class="btn-label">Send Message</span>
+          <svg viewBox="0 0 24 24" aria-hidden="true" class="send-ico"><path d="M3.5 12 21 4l-6.5 16-2.6-6.3z" fill="none" stroke-width="1.8" stroke-linejoin="round"/></svg>
+        </button>
+
+        <p class="form-status" id="formStatus" role="status" aria-live="polite"></p>
+      </form>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<!-- ============ FOOTER ============ -->
+<footer class="footer">
+  <div class="container footer-grid">
+    <div class="f-brand">
+      <a href="#home" class="brand"><span class="brand-mark">M</span><span class="brand-text">Mohan<em>.dev</em></span></a>
+      <p>Full-Stack Web Developer crafting modern, responsive web experiences from Tamil Nadu, India.</p>
+    </div>
+    <nav class="f-nav" aria-label="Footer navigation">
+      <h4>Navigate</h4>
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <a href="#education">Education</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <div class="f-contact">
+      <h4>Get in touch</h4>
+      <a href="mailto:mohantn617@gmail.com">mohantn617@gmail.com</a>
+      <a href="tel:+919597043905">+91 95970 43905</a>
+      <span>Tamil Nadu, India</span>
+    </div>
+  </div>
+  <div class="container f-bottom">
+    <p>© <span id="year"></span> Mohan K. All rights reserved.</p>
+    <p>Built with pure HTML, CSS &amp; JavaScript.</p>
+  </div>
+</footer>
+
+<!-- ============ BACK TO TOP ============ -->
+<button class="to-top" id="toTop" type="button" aria-label="Back to top">
+  <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 20V5m0 0-6 6m6-6 6 6" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+</button>
+
+<!-- ============ PROJECT MODAL ============ -->
+<div class="modal" id="projectModal" role="dialog" aria-modal="true" aria-labelledby="pmTitle" aria-hidden="true">
+  <div class="modal-backdrop" data-close></div>
+  <div class="modal-box">
+    <button class="modal-close" type="button" data-close aria-label="Close">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 6l12 12M18 6 6 18" stroke-width="2" stroke-linecap="round"/></svg>
+    </button>
+    <div class="modal-hero" id="pmHero"></div>
+    <div class="modal-body">
+      <span class="modal-tag" id="pmTag">Web Application</span>
+      <h3 id="pmTitle">Project Title</h3>
+      <p id="pmDesc">Description</p>
+      <h4>Key Features</h4>
+      <ul class="modal-list" id="pmFeatures"></ul>
+      <h4>Technologies Used</h4>
+      <div class="chips" id="pmTech"></div>
+      <div class="modal-actions">
+        <a href="#" id="pmLive" class="btn btn-primary btn-sm" target="_blank" rel="noopener">Live Preview</a>
+        <a href="#" id="pmCode" class="btn btn-ghost btn-sm" target="_blank" rel="noopener">Source Code</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ============ LIGHTBOX ============ -->
+<div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Certificate preview" aria-hidden="true">
+  <div class="modal-backdrop" data-close></div>
+  <div class="lb-inner">
+    <button class="modal-close" type="button" data-close aria-label="Close preview">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 6l12 12M18 6 6 18" stroke-width="2" stroke-linecap="round"/></svg>
+    </button>
+    <img id="lbImg" src="" alt="" />
+    <div class="lb-cap"><strong id="lbTitle"></strong><span id="lbSub"></span></div>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
